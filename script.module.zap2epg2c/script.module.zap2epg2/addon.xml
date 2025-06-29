@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.zap2epg2" name="zap2epg2" version="1.0.0" provider-name="hagertyoh">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.dateutil" version="2.4.2"/>
+    <import addon="script.module.xbmcswift2" version="2.4.0"/>
+    <import addon="script.module.requests" version="2.9.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">zap2epg will generate an xmltv.xml file for USA/Canada TV lineups</summary>
+    <description lang="en_gb">zap2epg is originally designed to be easily setup in Kodi for use as a grabber for tvheadend.  It includes the ability to setup your custom channel list to reduce the amount of data downloaded and speed up the grab.  It has an option for downloading extra detail information for programs. (Note: this option will generate an extra http request per series) It also has an option to append the extra detail information to the description (plot) field, which makes displaying this information in the Kodi EPG easier on many skins.
+
+Setup:
+ 1. Install the zap2epg addon in Kodi
+ 2. Run the addon and setup your lineup
+ 3. Configure your channel list (add channels to be downloaded)
+ 4. You can run the program from the addon as a test (not necessary)
+ 5. Setup the zap2epg grabber in tvheadend
+ 6. Enjoy your new EPG!</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <news>
+      v2.0.3 - fix channel configuration error (2021-05-23)
+      v2.0.2 - fix Tvheadend username and password option (2021-03-29)
+      v2.0.1 - Kodi 19 dialog fix (2021-02-25)
+      v2.0.0 - Python 3 update (2020-10-27)
+      v1.3.0 - fix server issues for lineups (2019-04-12)
+      v1.2.0 - add option to refresh download cache days (2019-03-04)
+      v1.1.0 - added ability to refresh TBA episodes (2018-11-20)
+      v1.0.0 - official stable release (2018-07-12)
+    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart></fanart>
+        <screenshot>resources/img/screenshot001.png</screenshot>
+        <screenshot>resources/img/screenshot002.png</screenshot>
+        <screenshot>resources/img/screenshot003.png</screenshot>
+        <screenshot>resources/img/screenshot004.png</screenshot>
+        <screenshot>resources/img/screenshot005.png</screenshot>
+        <screenshot>resources/img/screenshot006.png</screenshot>
+    </assets>
+  </extension>
+</addon>
